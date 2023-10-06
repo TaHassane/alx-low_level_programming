@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers from 0 to 9.
+ * main - reverse alphabet
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
+	char rev;
 
-	for (i = 48; i < 58; i++)
+	for (rev = 'z'; rev >= 'a'; rev--)
 	{
-	putchar(i);
+	putchar(rev);
 	}
 	putchar('\n');
 	return (0);
-}
+	}

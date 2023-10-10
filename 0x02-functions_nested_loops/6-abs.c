@@ -3,6 +3,8 @@
 #include "main.h"
 
 /**
- * _abs - omputes the absolute value of an integer.
- * Return: ALways 0 (Success)
+ * _abs -  computes the absolute value of an integer.
+ * @n: checks input
  *
+ * Return:  1 if +, 0 if 0, -1 if -
+*/

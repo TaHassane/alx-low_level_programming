@@ -2,8 +2,7 @@
 #include <unistd.h>
 #include "main.h"
  /*
-  * _isalpha - function that checks for alphabetic character.
-  * both lwer and uppercase
+  * _isalpha - checks for alphabetic characters
   *@c : input check
   *retun :Returns 1 if c is a letter, lowercase or uppercase
   *Returns 0 otherwise

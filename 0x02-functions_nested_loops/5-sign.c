@@ -2,11 +2,11 @@
 #include <unistd.h>
 #include "main.h"
 
-/*
+/**
  * print_sign -  prints the sign of a number.
  * @n: checks input
- * return:  Returns 0 and prints 0 if n is zero
-	Returns -1 and prints - if n is less than zero
+ *
+ * Return:  1 if +, 0 if 0, -1 if -
 */
 
 int print_sign(int n)

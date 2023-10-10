@@ -6,5 +6,12 @@
  * _abs -  computes the absolute value of an integer.
  * @n: checks input
  *
- * Return:  1 if +, 0 if 0, -1 if -
+ * Return:  always n (success)
 */
+
+int _abs(int n)
+{
+	if (n < 0)
+		n = (-1) * n;
+	return (n);
+}

@@ -16,6 +16,8 @@ int main(void)
 		s = fib1 + fib2;
 
 		if (s > 4000000)
+			break;
+		if ((s % 2) == 0)
 			t += s;
 		fib1 = fib2;
 		fib2 = s;

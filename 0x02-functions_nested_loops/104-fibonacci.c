@@ -36,11 +36,11 @@ int main(void)
 	for (c = 1 ; c <= 98; c++)
 	{
 		if (f1o > 0)
-			printf("%lu", f1O);
+			printf("%lu", f1o);
 		i = numLength(max) - 1 - numLength(f1);
 		while (f1o > 0 && i > 0)
 		{
-			prinft("%d", 0);
+			printf("%d", 0);
 			i--;
 		}
 		printf("%lu", f1);

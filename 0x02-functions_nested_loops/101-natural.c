@@ -3,11 +3,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - check the code
  *
- * Description: computes and prints the sum of all the multiple 3 5 1024
- *
- * Return : always returns 0
+ * Return: Always 0.
  */
 
 int main(void)

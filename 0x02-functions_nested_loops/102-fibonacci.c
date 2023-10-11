@@ -10,17 +10,17 @@
 int main(void)
 {
 	int c;
-	unsigned long fic1 = 0, fib2 = 1, s;
+	unsigned long fib1 = 0, fib2 = 1, s;
 
 	for (c = 0; c < 50; c++)
 	{
 		s = fib1 + fib2;
-		printf("%lu", sum);
+		printf("%lu", s);
 
 		fib1 = fib2;
 		fib2 = s;
 
-		if (count == 49)
+		if (c == 49)
 			printf("\n");
 		else
 			printf(", ");

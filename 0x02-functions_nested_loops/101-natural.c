@@ -19,6 +19,6 @@ int main(void)
 		if ((n % 3 == 0) || (n % 5 == 0))
 			s += n;
 	}
-	prontf("%d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }

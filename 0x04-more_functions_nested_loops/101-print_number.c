@@ -19,5 +19,5 @@ void print_number(int n)
 	if ((nb / 10) > 0)
 		print_number(nb / 10);
 
-	_putchar((num % 10) + 48;
+	_putchar((nb % 10) + 48);
 }

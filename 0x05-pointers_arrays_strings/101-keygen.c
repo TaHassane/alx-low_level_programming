@@ -2,7 +2,7 @@
 #include "main.h"
 #include <time.h>
 #include <stdlib.h>
-#include <stdlio.h>
+#include <stdio.h>
 
 /**
 * main - check code 

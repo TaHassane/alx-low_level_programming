@@ -23,13 +23,12 @@ int isLower(char c)
 int isDelimiter(char c)
 {
 	int i;
-	char del[] = "\t\n\",.!?(){}";
+	char del[] = "\t\n,.!?\"(){}";
 
 	for (i = 0; i < 12; i++)
-	{
+	
 		if (c == del[i])
-		return (1);
-	}
+			return (1);
 	return (0);
 }
 
@@ -55,6 +54,7 @@ char *cap_string(char *s)
 
 		else
 			fDel = 0;
+		s++;
 	}
 	return (p);
 }

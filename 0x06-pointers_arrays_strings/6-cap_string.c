@@ -26,7 +26,6 @@ int isDelimiter(char c)
 	char del[] = " \t\n,.;!?\"(){}";
 
 	for (i = 0; i < 12; i++)
-	
 		if (c == del[i])
 			return (1);
 	return (0);

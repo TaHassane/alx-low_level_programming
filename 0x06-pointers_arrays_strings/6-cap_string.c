@@ -30,7 +30,7 @@ int isDelimiter(char c)
 		if (c == del[i])
 		return (1);
 	}	
-	return (0)
+	return (0);
 }
 
 /**
@@ -47,7 +47,7 @@ char *cap_string(char *s)
 	{
 		if (isDelimiter(*s))
 			fDel = 1;
-		else if (isLower(*s) && FDel)
+		else if (isLower(*s) && fDel)
 		{
 			*s -= 32;
 			fDel = 0;

@@ -25,8 +25,8 @@ char *leet(char *s)
 			{
 				*s = 48 + n[i];
 			}
-			s++;
 		}
+		s++;
 	}
 	return (en);
 }

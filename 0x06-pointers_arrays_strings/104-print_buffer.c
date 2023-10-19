@@ -7,17 +7,16 @@
 /**
 * isPrintableAscii -  if n is printable or not
 * @n: input
-* @size: 
 * Return: 1 if true 0 otherwise
 */
-int isPrintableAscii (int n)
+int isPrintableAscii(int n)
 {
 	return (n >= 32 && n <= 126);
 }
 
 /**
 * PrintH -  print value
-* @x: input
+* @b: input
 * @deb: starting pos
 * @fin: ending pos
 * Return: ending position
@@ -25,7 +24,7 @@ int isPrintableAscii (int n)
 void PrintH(char *b, int deb, int fin)
 {
 	int i = 0;
-	
+
 	while (i < 10)
 	{
 		if (i < fin)
@@ -41,14 +40,15 @@ void PrintH(char *b, int deb, int fin)
 
 /**
 * PrintAscii - print ASCII value
-* @n: input
-* @size: 
+* @b: input
+* @deb: starting pos
+* @fin: ending pos
 * Return: 1 if true 0 otherwise
 */
-void PrintAscii (char *b, int deb, int fin)
+void PrintAscii(char *b, int deb, int fin)
 {
 	int ch, i = 0;
-	
+
 	while (i < fin)
 	{
 		ch = *(b + i + deb);
@@ -61,20 +61,20 @@ void PrintAscii (char *b, int deb, int fin)
 
 
 /**
-* *infinite_add -  adds two numbers.
+* print_buffer - prints a buffer.
 * @b: input
-* @size: 
+* @size: the size
 * Return: nothing
 */
 void print_buffer(char *b, int size)
 {
 	int deb, fin;
-	
+
 	if (size > 0)
 	{
 		for (deb = 0; deb < size; deb += 10)
 		{
-			fin = (size -deb < 10) ? size - deb : 10;
+			fin = (size - deb < 10) ? size - deb : 10;
 			printf("%08x: ", deb);
 			PrintH(b, deb, fin);
 			PrintAscii(b, deb, fin);

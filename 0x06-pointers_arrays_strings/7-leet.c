@@ -12,12 +12,12 @@
 char *leet(char *s)
 {
 
-char *en = s;
-char c[] = {'A', 'E', 'O', 'T', 'L'}.
-int n[] = {4, 3, 0, 7, 1};
-unsigned int i;
+	char *en = s;
+	char c[] = {'A', 'E', 'O', 'T', 'L'};
+	int n[] = {4, 3, 0, 7, 1};
+	unsigned int i;
 
-	while(*s)
+	while (*s)
 	{
 		for (i = 0; i < sizeof(c) / sizeof(char); i++)
 		{
@@ -28,5 +28,5 @@ unsigned int i;
 			c++;
 		}
 
-		return (en);
+	return (en);
 }

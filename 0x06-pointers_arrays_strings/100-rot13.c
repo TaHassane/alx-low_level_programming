@@ -6,7 +6,7 @@
 
 /**
 * *rot13 - encodes a string using rot13.
-* @c: input
+* @s: input
 * Return: encoded string
 */
 char *rot13(char *s)
@@ -30,5 +30,5 @@ char *rot13(char *s)
 		}
 		s++;
 	}
-	return(p);
+	return (p);
 }

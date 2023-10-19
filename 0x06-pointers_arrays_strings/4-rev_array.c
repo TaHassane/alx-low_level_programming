@@ -5,9 +5,8 @@
 #include <stdio.h>
 
 /**
-* _strcmp - function that concatenates two strings
+* reverse_array - function that concatenates two strings
 * @a: input
-* @b: input
 * @n: the number of elements of the array
 * Return: no return
 */

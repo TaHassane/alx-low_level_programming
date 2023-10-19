@@ -22,17 +22,16 @@ int isPrintableAscii (int n)
 * @fin: ending pos
 * Return: ending position
 */
-int PrintH(char *b, int deb, int fin)
+void PrintH(char *b, int deb, int fin)
 {
 	int i = 0;
 	
 	while (i < 10)
 	{
-		if(i < 10)
-			if (i < fin)
-				printf("%02x", *(b + deb + i));
-			else
-				printf(" ");
+		if (i < fin)
+			printf("%02x", *(b + deb + i));
+		else
+			printf(" ");
 		if (i % 2)
 			printf(" ");
 		i++;
@@ -46,16 +45,16 @@ int PrintH(char *b, int deb, int fin)
 * @size: 
 * Return: 1 if true 0 otherwise
 */
-int PrintAscii (char *b, int deb, int fin)
+void PrintAscii (char *b, int deb, int fin)
 {
 	int ch, i = 0;
 	
 	while (i < fin)
 	{
 		ch = *(b + i + deb);
-		if (!isPrintableAscii)
+		if (!isPrintableAscii(ch))
 			ch = 46;
-			print("%c", ch);
+		printf("%c", ch);
 		i++;
 	}
 }
@@ -76,8 +75,9 @@ void print_buffer(char *b, int size)
 		for (deb = 0; deb < size; deb += 10)
 		{
 			fin = (size -deb < 10) ? size - deb : 10;
-			printf("%08x: ", deb)
-			printH(b, deb, fin);
+			printf("%08x: ", deb);
+			PrintH(b, deb, fin);
+			PrintAscii(b, deb, fin);
 			printf("\n");
 		}
 	} else

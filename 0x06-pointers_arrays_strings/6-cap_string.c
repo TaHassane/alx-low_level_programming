@@ -16,7 +16,7 @@ int isLower(char c)
 
 }
 /**
-* isLower - checks if the caracter is a delimiter.
+* isDelimiter - checks if the caracter is a delimiter.
 * @c: input
 * Return: 1 if true 0 if false
 */
@@ -25,17 +25,17 @@ int isDelimiter(char c)
 	int i;
 	char del[] = "\t\n\",.!?(){}";
 
-	for (i = 0; i <12; i++)
+	for (i = 0; i < 12; i++)
 	{
 		if (c == del[i])
 		return (1);
-	}	
+	}
 	return (0);
 }
 
 /**
 * *cap_string -  capitalizes all words of a string.
-* @c: input
+* @s: input
 * Return: 1 if true 0 if false
 */
 char *cap_string(char *s)

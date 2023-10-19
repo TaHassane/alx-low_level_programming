@@ -2,7 +2,7 @@
 #include "main.h"
 #include <time.h>
 #include <stdlib.h>
-#include <stdlio.h>
+#include <stdio.h>
 
 /**
 * *_strcat - function that concatenates two strings

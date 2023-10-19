@@ -12,7 +12,7 @@
 int isLower(char c)
 {
 
-	return (c <= 97 && c <= 122);
+	return (c >= 97 && c <= 122);
 
 }
 /**
@@ -23,7 +23,7 @@ int isLower(char c)
 int isDelimiter(char c)
 {
 	int i;
-	char del[] = "\t\n,.!?\"(){}";
+	char del[] = " \t\n,.;!?\"(){}";
 
 	for (i = 0; i < 12; i++)
 	

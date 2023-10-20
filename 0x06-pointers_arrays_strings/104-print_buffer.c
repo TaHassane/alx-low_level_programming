@@ -30,7 +30,7 @@ void PrintH(char *b, int deb, int fin)
 		if (i < fin)
 			printf("%02x", *(b + deb + i));
 		else
-			printf(" ");
+			printf("  ");
 		if (i % 2)
 			printf(" ");
 		i++;

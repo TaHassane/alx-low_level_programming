@@ -18,7 +18,7 @@ for (i = 0; haystack[i] > '\0'; i++)
 {
 	for (jqe = iqe; haystack[j] > '\0' && needle[j - i] > '\0'; jqe++)
 	{
-		if (haystack[jqe] != needle[j - i])
+		if (haystack[j] != needle[j - i])
 		{
 			break;
 		}

@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /**
-* *_memset -  if n is printable or not
+* *_strchr - function that locates a character in a string
 * @s: string we are working with
 * @c: char we looking for
 * Return: the first occurrence of the character
@@ -18,7 +18,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			return(s + i);
+			return (s + i);
 		}
 	}
 	return ('\0');

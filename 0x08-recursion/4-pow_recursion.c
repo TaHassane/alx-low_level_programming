@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /**
-* _pow_recursion - function that returns the value of x 
+* _pow_recursion - function that returns the value of x
 * raised to the power of y.
 * @x: the number
 * @y: the power of which x should be increased by

@@ -32,8 +32,8 @@ int func(char *s1, char *s2)
 	if (*s1 == 0)
 		return (0);
 	if (*s1 == *s2)
-		n+= wildcmp(s1 + 1, s2 + 1)
-		n+= func(s1 + 1, s2);
+		n += wildcmp(s1 + 1, s2 + 1);
+		n += func(s1 + 1, s2);
 	return (n);
 
 }
@@ -65,9 +65,9 @@ int wildcmp(char *s1, char *s2)
 		if (!*s2)
 			return (1);
 		if (*s1 == *s2)
-			n += wildcmp(s1 + 1, s2 + 1)
-			n += func(s1, s2);
-			return (!!ret);
+			n += wildcmp(s1 + 1, s2 + 1);
+		n += func(s1, s2);
+		return (!!n);
 	}
 	return (0);
 }

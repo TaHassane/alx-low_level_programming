@@ -8,6 +8,7 @@
 * _sqrt_recursion - that returns the natural square root
 * of a number
 * @n: the number
+* @x: square root
 * Return: the result
 */
 
@@ -21,18 +22,17 @@ int _sqrt_recursion(int n)
 * sqr - that returns the natural square root
 * of a number
 * @n: the number we need to square
-* @x the number to check if it's a square root
+* @x: the number to check if it's a square root
 * Return: the result
 */
 
 int sqr(int n, int x)
-
 {
 
 	if (x * x == n)
 		return (x);
 	else if (x * x < n)
-		return (square (n, x + 1));
+		return (sqr(n, x + 1));
 	else
 		return (-1);
 }

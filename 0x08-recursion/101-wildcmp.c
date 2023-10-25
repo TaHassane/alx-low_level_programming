@@ -33,7 +33,7 @@ int func(char *s1, char *s2)
 		return (0);
 	if (*s1 == *s2)
 		n += wildcmp(s1 + 1, s2 + 1);
-		n += func(s1 + 1, s2);
+	n += func(s1 + 1, s2);
 	return (n);
 
 }

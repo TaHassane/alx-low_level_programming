@@ -6,7 +6,7 @@
 * change for an amount of money.
 * @argc: int
 * @argv: array
-* Return: 0 succes otherwise fail 
+* Return: 0 succes otherwise fail
 */
 
 int main(int argc, char const *argv[])
@@ -36,5 +36,5 @@ int main(int argc, char const *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	return(0);
+	return (0);
 }

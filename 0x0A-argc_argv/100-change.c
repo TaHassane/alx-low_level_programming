@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 		int i, change = atoi(argv[1]), n = 0;
 		int pieces[] = {25, 10, 5, 2, 1};
 
-		for (i = 0, i < 5, i++)
+		for (i = 0; i < 5; i++)
 		{
 			if (change >= pieces[i])
 			{

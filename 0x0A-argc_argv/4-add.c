@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("0\n");
-		return 0;
+		return (0);
 	}
 
 	for (i = 1; i < argc; i++)
@@ -25,16 +25,15 @@ int main(int argc, char *argv[])
 		while (arg[j] != '\0')
 		{
 			if (arg[j] < '0' || arg[j] > '9')
-		{
-			printf("Error\n");
-			return 1;
+			{
+				return (printf("Error\n"), 1);
+			}
+		j++;
 		}
- 		j++;
-	}
 
-	n += atoi(arg);
+		n += atoi(arg);
 	}
 
 	printf("%d\n", n);
-	return 0;
+	return (0);
 }

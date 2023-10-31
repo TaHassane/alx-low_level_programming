@@ -29,6 +29,7 @@ int count(char *s)
 	}
 
 	return (j);
+
 }
 /**
  * **strtow - string to words
@@ -38,7 +39,7 @@ int count(char *s)
  */
 char **strtow(char *str)
 {
-	char **x, *c;
+	char **x, *s;
 	int i, k = 0, l = 0, words, c = 0, deb, fin;
 
 	while (*(str + l))
@@ -58,13 +59,13 @@ char **strtow(char *str)
 			if (c)
 			{
 				fin = i;
-				c = (char *) malloc(sizeof(char) * (c + 1));
-				if (c == NULL)
+				s = (char *) malloc(sizeof(char) * (c + 1));
+				if (s == NULL)
 					return (NULL);
 				while (deb < fin)
-					*c++ = str[deb++];
-				*c = '\0';
-				x[k] = c - c;
+					*s++ = str[deb++];
+				*s = '\0';
+				x[k] = s - c;
 				k++;
 				c = 0;
 			}
@@ -77,4 +78,3 @@ char **strtow(char *str)
 
 	return (x);
 }
-

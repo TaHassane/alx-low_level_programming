@@ -43,7 +43,7 @@ char **strtow(char *str)
 
 	while (*(str + l))
 		l++;
-	words = count_word(str);
+	words = count(str);
 	if (words == 0)
 		return (NULL);
 
@@ -77,5 +77,4 @@ char **strtow(char *str)
 
 	return (x);
 }
-
 

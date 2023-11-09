@@ -26,7 +26,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	symb = argv[2];
 	b = atoi(argv[3]);
 
-	if (get_op_func(op) == NULL || symb[1] != '\0')
+	if (get_op_func(symb) == NULL || symb[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);

@@ -32,12 +32,11 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*op == '/' && b == 0) ||
-		(*op == '%' && b == 0))
-		{
-			printf("Error\n");
-			exit(100);
-		}
+	if ((*op == '/' && b == 0) || (*op == '%' && b == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
 
 	printf("%d\n", get_op_func(op)(a, b));
 

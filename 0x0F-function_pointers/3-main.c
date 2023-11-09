@@ -19,7 +19,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(1);
 	}
 
 	a = atoi(argv[1]);
@@ -29,13 +29,13 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
-		exit(99);
+		exit(2);
 	}
 
 	if ((*op == '/' && b == 0) || (*op == '%' && b == 0))
 	{
 		printf("Error\n");
-		exit(100);
+		exit(3);
 	}
 
 	printf("%d\n", get_op_func(op)(a, b));

@@ -1,13 +1,13 @@
 #include "variadic_functions.h"
 
 /**
-* print_l - prints l, followed by a new line.
-* @separator: separator between l
+* print_string - prints string, followed by a new line.
+* @separator: separator between strings
 * @n: the number of args
-* @...: l to print
+* @...: strings to print
 * Return: nothing
 */
-void print_l(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 
 	va_list l;

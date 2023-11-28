@@ -207,7 +207,7 @@ int check_elf(char *ptr)
  */
 int main(int argc, char *argv[])
 {
-	int fd, ret_read;
+	int x, rtread;
 	char ptr[27];
 
 	if (argc != 2)
@@ -216,18 +216,18 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	fd = open(argv[1], O_RDONLY);
+	x = open(argv[1], O_RDONLY);
 
-	if (fd < 0)
+	if (x < 0)
 	{
 		dprintf(STDERR_FILENO, "Err: file can not be open\n");
 		exit(98);
 	}
 
-	lseek(fd, 0, SEEK_SET);
-	ret_read = read(fd, ptr, 27);
+	lseek(x, 0, SEEK_SET);
+	rtread = read(x, ptr, 27);
 
-	if (ret_read == -1)
+	if (rtread == -1)
 	{
 		dprintf(STDERR_FILENO, "Err: The file can not be read\n");
 		exit(98);
@@ -240,7 +240,7 @@ int main(int argc, char *argv[])
 	}
 
 	check_sys(ptr);
-	close(fd);
+	close(x);
 
 	return (0);
 }

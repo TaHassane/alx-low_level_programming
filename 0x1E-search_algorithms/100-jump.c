@@ -2,7 +2,7 @@
 #include <math.h>
 
 /**
- * jp_search - Searches for a value in a sorted array of integers
+ * jump_search - Searches for a value in a sorted array of integers
  * using the Jump search algorithm
  * @array: array search in
  * @size: size

@@ -10,7 +10,7 @@
  *
  * Return: first index where value is located OR -1
  */
-int jp_search(int *array, size_t size, int value)
+int jump_search(int *array, size_t size, int value)
 {
 	size_t jp;
 	size_t prv;
